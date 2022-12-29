@@ -1,0 +1,30 @@
+package com.algaworks.algalog.api.model.input;
+
+import javax.persistence.Column;
+import javax.validation.constraints.NotBlank;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class DestinatarioInput {
+	@NotBlank
+	@Column(name = "destinatario_nome")
+	private String nome;
+	
+	@NotBlank
+	private String logradouro;
+	
+	@NotBlank
+	private String numero;
+	
+	@NotBlank
+	private String complemento;
+	
+	@NotBlank
+	private String Bairro;
+
+
+
+}
